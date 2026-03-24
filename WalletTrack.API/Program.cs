@@ -1,4 +1,6 @@
+using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
+using WalletTrack.Persistence.Context;
 
 public partial class Program
 {
@@ -8,6 +10,11 @@ public partial class Program
 
         builder.Services.AddControllers();
         builder.Services.AddOpenApi();
+
+        builder.Services.AddDbContext<WalletTrackContext>(options => {
+            options.UseSqlServer(builder.Configuration.GetConnectionString("WalletTrack"));
+            options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
+        });
 
         var app = builder.Build();
 
