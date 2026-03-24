@@ -1,3 +1,7 @@
 <Solution>
   <Project Path="WalletTrack.API/WalletTrack.API.csproj" />
+  <Project Path="WalletTrack.Application/WalletTrack.Application.csproj" Id="7ce87a7c-d362-4f03-b797-d6bfe42a8a1f" />
+  <Project Path="WalletTrack.Domain/WalletTrack.Domain.csproj" Id="0a242f89-f0fb-464c-9281-b4394bb89de9" />
+  <Project Path="WalletTrack.Infrasturcture/WalletTrack.Infrasturcture.csproj" Id="71919741-5518-4b44-8d7f-88f14aec3fb9" />
+  <Project Path="WalletTrack.Persistence/WalletTrack.Persistence.csproj" Id="689c1f0b-e9b4-49a2-bb5b-b638aced46c1" />
 </Solution>
